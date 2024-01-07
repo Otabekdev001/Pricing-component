@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- stylesh -->
        <link rel="stylesheet" href="css/stylesh.css">
+       <link rel="stylesheet" href="main.js">
        <link rel="stylesheet" href="css/normalize.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
               <div class="switch">
                 <!-- switch radios -->
                   <input class="switch-input-annual visually-hidden" type="radio" name="payment_period" id="annual-payment-radio" value="annual">
-                  <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" id="monthly-payment-radio" value="monthly">
+                  <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" id="monthly-payment-radio" value="monthly" checked>
                   <label class="switch-label" for="annual-payment-radio">Annualy</label>
                       <!-- switch control -->
                   <div class="switch-control">
@@ -39,11 +40,11 @@
               <h2 class="visually-hidden"> pricing</h2>
               <div class="pricing-inner">
                 <!-- 1 -->
-                <div class="prising-plan">
+                <div class="prising-plan" data-payment-annual="199.99" data-payment-monthly="19.99">
                   <h3 class="prising-plan-title">Basic</h3>
                   <div class="prising-plan-price">
                     <span class="prising-plan-currency">$</span>
-                    19.99
+                    <span class="pricing-plan-value">19.99</span>
                   </div>
                   <ul class="prising-plan-features">
                     <li class="prising-plan-feature">
@@ -57,11 +58,11 @@
                   <a class="button button-block button-primary" href="#">Learn more</a>
                 </div>
                 <!-- 2 -->
-                <div class="prising-plan prising-plan-best">
+                <div class="prising-plan prising-plan-best" data-payment-annual="249.99" data-payment-monthly="24.99">
                   <h3 class="prising-plan-title">Professional</h3>
                   <div class="prising-plan-price">
                     <span class="prising-plan-currency">$</span>
-                    24.99
+                    <span class="pricing-plan-value">24.99</span>
                   </div>
                   <ul class="prising-plan-features">
                     <li class="prising-plan-feature">
@@ -75,11 +76,11 @@
                   <a class="button button-block button-white" href="#">Learn more</a>
                 </div>
                 <!-- 3 -->
-                <div class="prising-plan">
+                <div class="prising-plan" data-payment-annual="399.99" data-payment-monthly="39.99">
                   <h3 class="prising-plan-title">Master</h3>
                   <div class="prising-plan-price">
                     <span class="prising-plan-currency">$</span>
-                    39.99
+                    <span class="pricing-plan-value">39.99</span>
                   </div>
                   <ul class="prising-plan-features">
                     <li class="prising-plan-feature">
@@ -96,5 +97,11 @@
              </section>
            </div>
          </div>
+
+
+
+         <script src="main.js"></script>
 </body>
+       
+  
 </html>
